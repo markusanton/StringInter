@@ -18,9 +18,9 @@ namespace Task1
 
             Console.WriteLine("When were you born?");
             userInputyearOfBirth = Console.ReadLine();
-            int yearOfBirthint;
-            yearOfBirthint = Int32.Parse(userInputyearOfBirth);
-            int yearofBirthFinal = 2020 - yearOfBirthint;
+            int yearOfBirth;
+            yearOfBirth = Int32.Parse(userInputyearOfBirth);
+            int yearofBirthFinal = 2020 - yearOfBirth;
 
             Console.WriteLine($"Hello, {firstName} {lastName}. You are {yearofBirthFinal} years old.");
         
