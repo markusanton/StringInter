@@ -8,7 +8,7 @@ namespace Task1
         {
             string firstName;
             string lastName;
-            string userInputyearOfBirth;
+            string UserInput;
             
             Console.WriteLine("What's your first name?");
             firstName = Console.ReadLine();
@@ -17,12 +17,10 @@ namespace Task1
             lastName = Console.ReadLine();
 
             Console.WriteLine("When were you born?");
-            userInputyearOfBirth = Console.ReadLine();
-            int yearOfBirth;
-            yearOfBirth = Int32.Parse(userInputyearOfBirth);
-            int yearofBirthFinal = 2020 - yearOfBirth;
+            UserInput = Console.ReadLine();
+            int Age = 2020 - Int32.Parse(UserInput);
 
-            Console.WriteLine($"Hello, {firstName} {lastName}. You are {yearofBirthFinal} years old.");
+            Console.WriteLine($"Hello, {firstName} {lastName}. You are {Age} years old.");
         
         }
     }
